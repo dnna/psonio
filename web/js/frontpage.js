@@ -2,7 +2,7 @@ $( document ).ready(function() {
     $('.product-typeahead').typeahead({
         minLength: 3,
         source: function (query, process) {
-            return $.getJSON('/app_dev.php/ajax_search/product/'+encodeURIComponent(query), {}, function (data) {
+            return $.getJSON('/ajax_search/product/'+encodeURIComponent(query), {}, function (data) {
                 var resultList = [];
                 $.each(data, function(index, value) {
                     if(resultList.indexOf(value.product) == -1) {
@@ -16,7 +16,7 @@ $( document ).ready(function() {
     $('.area-typeahead').typeahead({
         minLength: 3,
         source: function (query, process) {
-            return $.getJSON('/app_dev.php/ajax_search/store/'+encodeURIComponent(query), {}, function (data) {
+            return $.getJSON('/ajax_search/store/'+encodeURIComponent(query), {}, function (data) {
                 var resultList = [];
                 $.each(data, function(index, value) {
                     $.each(value.store.split(/[\s\/]+/), function(sindex, svalue) {
