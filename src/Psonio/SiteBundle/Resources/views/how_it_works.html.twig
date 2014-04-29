@@ -1,0 +1,12 @@
+{% extends 'PsonioSiteBundle::base.html.twig' %}
+
+{% block content %}
+    <h3>Πως λειτουργεί</h3>
+    <p class="text-align-justify">Είναι απλό! Εισάγεις το προϊόν που σε ενδιαφέρει και την περιοχή που βρίσκεσαι και βλέπεις σε ποια καταστήματα πωλείται φθηνότερα.</p>
+    <p class="text-align-justify">Με τη βοήθεια των ανοιχτών δεδομένων του παρατηρητήριου τιμών (<a href="http://services.e-prices.gr/" target="_blank">http://services.e-prices.gr/</a>, <a href="http://data.gov.gr" target="_blank">http://data.gov.gr</a>), δεν χρειάζεται πλέον να μαντεύεις πού υπάρχουν τα φθηνότερα προϊόντα. Το Psonio καθιστά τα δεδομένα αυτά αναζητήσιμα, δίνοντας σου τη δυνατότητα να μπορείς ανά πάσα στιγμή να συγκρίνεις τιμές σε καταστήματα, εξοικονομώντας έτσι χρόνο και χρήματα.
+    </p>
+
+    <div class="row">
+        <a href="{{path('home')}}" class="btn btn-primary btn-large">Δοκίμασε κι εσύ</a>
+    </div>
+{% endblock %}

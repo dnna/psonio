@@ -1,0 +1,74 @@
+Logout: Αποσύνδεση
+
+# Member
+Am: Αριθμός Μητρώου
+Name: Όνομα
+Surname: Επώνυμο
+Address: Διεύθυνση Κατοικίας
+Tel: Τηλέφωνο
+Birthday: Ημ/νία γέννησης
+Regdate: Ημ/νία Εγγραφής
+Removaldate: Ημ/νία Διαγραφής
+Comments: Σχόλια
+
+# Amea
+Amea: ΑΜΕΑ
+Amea List: Λίστα ΑΜΕΑ
+Representativename: Όνομα Εκπροσώπου
+Representativesurname: Επώνυμο Εκπροσώπου
+Sports: Αθλήματα
+Medication: Φαρμακευτική Αγωγή
+Disability: Αναπηρία
+Otherpeculiarities: Άλλες Ιδιαιτερότητες
+otherpeculiarities_help: Πχ. Αλλεργίες, Επιληψία κ.α.
+Payments: Πληρωμές
+Payments Year: Έχουν πληρώσει για το έτος
+
+# Friend
+Friends: Φίλοι/Χορηγοί
+Friend List: Λίστα Φίλων/Χορηγών
+Capacity: Ιδιότητα
+Capacity As String: Ιδιότητα
+member: Μέλος
+sponsor: Χορηγός
+Sponsorpayments: Πληρωμές/Χορηγίες
+Sponsorpayments Year: Έχουν πληρώσει/δωρίσει για το έτος
+Sponsorpayments Amount: Ποσό πληρωμής/δωρεάς
+
+# Appointment
+Appointments: Ραντεβού
+Appointment List: Λίστα Ραντεβού
+Specialty: Ειδικότητα Γιατρού
+Doctorname: Όνομα Γιατρού
+Doctorsurname: Επώνυμο Γιατρού
+
+# User
+Users: Χρήστες
+User List: Λίστα Χρηστών
+Username: Username
+Plain Password: Κωδικός Πρόσβασης
+Enabled: Ενεργοποιημένος
+Locked: Κλειδωμένος
+president: Πρόεδρος
+social worker: Κοινωνικός Λειτουργός
+it support: ΙΤ
+
+# Disability
+Disabilities: Τύποι Αναπηριών
+Disability List: Λίστα Τύπων Αναπηριών
+
+# Specialty
+Doctor Specialties: Ειδικότητες Γιατρών
+Specialty List: Λίστα Ειδικοτήτων Γιατρών
+
+# Payment
+Year: Έτος
+Receiptnum: Αριθμός Απόδειξης
+Municipalcharge: Δημοτικά Τέλη
+Poor: Άποροι
+Centerservices: Υπηρεσίες Κέντρου
+Sportprogrammes: Αθλητικά Προγράμματα
+
+# SponsorPayment
+Date: Ημ/νία
+Amount: Ποσό

@@ -1,0 +1,21 @@
+{% extends 'PsonioSiteBundle::base.html.twig' %}
+
+{% block content %}
+    <table class="table table-striped">
+    {% for result in results %}
+        <tr {% if loop.index == 1 %}class="success"{% endif %}>
+            <td>{{result.product}}</td>
+            <td>{{result.store}}</td>
+            <td>€{{result.price}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+    <div class="row">
+        <a href="{{path('home')}}" class="results-back">Επιστροφή</a>
+    </div>
+
+    <div class="pagination">
+      {{ pagerfanta(paginator, 'twitter_bootstrap3',  { 'proximity': 1, 'prev_message': '←', 'next_message': '→'}) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'PsonioSiteBundle::base.html.twig' %}
+
+{% block content %}
+    <form action="{{path('search')}}" method="GET">
+        {{form_row(searchForm.product)}}
+        {{form_row(searchForm.area)}}
+        {{form_row(searchForm.search)}}
+    </form>
+    <a href="{{path('how_it_works')}}" class="how-it-works">Πώς λειτουργεί</a>
+{% endblock %}

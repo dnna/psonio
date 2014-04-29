@@ -1,0 +1,21 @@
+.main-container {
+    max-width: 600px;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.how-it-works {
+    margin-right: 5px;
+    margin-top: 10px;
+    float: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
