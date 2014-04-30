@@ -32,6 +32,7 @@
         "jms/security-extra-bundle": "1.5.*",
         "jms/serializer-bundle": "*",
         "friendsofsymfony/user-bundle": "*",
+        "liuggio/excelbundle": "~2.0",
         "excelwebzone/zend-search": "dev-master",
         "excelwebzone/search-bundle": "dev-master",
         "white-october/pagerfanta-bundle": "*",

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d13060708774aba8d8813ff04387d711",
+    "hash": "b251065e9c58eae6361718398c268faa",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1642,6 +1642,71 @@
             "time": "2013-08-09 17:09:19"
         },
         {
+            "name": "liuggio/ExcelBundle",
+            "version": "dev-master",
+            "target-dir": "Liuggio/ExcelBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liuggio/ExcelBundle.git",
+                "reference": "ce7b0955a24dc87e30099af9a1c0c360e18111b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liuggio/ExcelBundle/zipball/ce7b0955a24dc87e30099af9a1c0c360e18111b4",
+                "reference": "ce7b0955a24dc87e30099af9a1c0c360e18111b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "phpoffice/phpexcel": "1.7.9",
+                "symfony/framework-bundle": "~2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "sensio/framework-extra-bundle": "~2.1",
+                "symfony/browser-kit": "~2.1",
+                "symfony/class-loader": "~2.1",
+                "symfony/finder": "~2.0",
+                "symfony/form": "~2.1",
+                "symfony/validator": "~2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Liuggio\\ExcelBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Giulio De Donato",
+                    "email": "liuggio@gmail.com",
+                    "homepage": "http://www.welcometothebundle.com"
+                },
+                {
+                    "name": "ExcelBundle Contributors",
+                    "homepage": "https://github.com/liuggio/ExcelBundle#contributors"
+                }
+            ],
+            "description": "This is a Symfony2 Bundle helps you to read and write Excel files (including pdf, xlsx, odt), thanks to the PHPExcel library",
+            "homepage": "http://www.welcometothebundle.com",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "excel",
+                "xls"
+            ],
+            "time": "2014-04-08 10:43:46"
+        },
+        {
             "name": "monolog/monolog",
             "version": "dev-master",
             "source": {
@@ -1824,6 +1889,62 @@
                 "set"
             ],
             "time": "2014-04-11 10:32:20"
+        },
+        {
+            "name": "phpoffice/phpexcel",
+            "version": "1.7.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PHPExcel.git",
+                "reference": "7a7634fba664249a04fc771df677a9b9f755d7ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/7a7634fba664249a04fc771df677a9b9f755d7ec",
+                "reference": "7a7634fba664249a04fc771df677a9b9f755d7ec",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPExcel": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "http://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://blog.rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                }
+            ],
+            "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "http://phpexcel.codeplex.com",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "time": "2013-05-24 11:57:42"
         },
         {
             "name": "phpoption/phpoption",
@@ -2358,12 +2479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "f800ade034c5d375b83f03a10ddb126a95b08ef2"
+                "reference": "272490312a1aedd6d2e79566b1b4808f4d214fa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/f800ade034c5d375b83f03a10ddb126a95b08ef2",
-                "reference": "f800ade034c5d375b83f03a10ddb126a95b08ef2",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/272490312a1aedd6d2e79566b1b4808f4d214fa8",
+                "reference": "272490312a1aedd6d2e79566b1b4808f4d214fa8",
                 "shasum": ""
             },
             "require": {
@@ -2465,7 +2586,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-04-29 06:55:57"
+            "time": "2014-04-30 06:22:28"
         },
         {
             "name": "twbs/bootstrap",
