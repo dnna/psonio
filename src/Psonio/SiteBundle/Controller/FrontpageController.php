@@ -68,7 +68,7 @@ class FrontpageController extends Controller {
             $query->addSubquery($areaBoolQuery, true);
         }
         $search = $this->get('ewz_search.lucene.manager')->getIndex('eprices');
-        $searchresults = $search->find($query, 'price', SORT_NUMERIC, SORT_ASC);
+        $searchresults = $search->find($query, 'score', SORT_NUMERIC, SORT_DESC, 'price', SORT_NUMERIC, SORT_ASC);
         $adapter = new ArrayAdapter($searchresults);
         $searchresults = new Pagerfanta($adapter);
         // Paging options
@@ -90,12 +90,12 @@ class FrontpageController extends Controller {
         $query = new Wildcard(new Term('*'.URLify::filter(urldecode($value)).'*', 's'.$field));
         $query->setMinPrefixLength(0);
         $search = $this->get('ewz_search.lucene.manager')->getIndex('eprices');
-        $searchresults = $search->find($query, 'price', SORT_NUMERIC, SORT_ASC);
+        $searchresults = $search->find($query, 'score', SORT_NUMERIC, SORT_DESC, 'price', SORT_NUMERIC, SORT_ASC);
         $adapter = new ArrayAdapter($searchresults);
         $searchresults = new Pagerfanta($adapter);
         // Paging options
         $searchresults->setNormalizeOutOfRangePages(true);
-        $searchresults->setMaxPerPage(10); // 10 by default
+        $searchresults->setMaxPerPage(200); // 10 by default
         $searchresults->setCurrentPage($this->container->get('request')->get('page', 1));
         $return = array();
         foreach($searchresults as $curResult) {
